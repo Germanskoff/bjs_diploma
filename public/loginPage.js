@@ -1,8 +1,8 @@
 "use strict";
 
-const userLogin = new UserForm();
+const userForm = new UserForm();
 
-userLogin.loginFormCallback = (data) => {
+userForm.loginFormCallback = (data) => {
     const checkLogin = ApiConnector.login((data), response => {
         if (response.success === true) {
             location.reload();
